@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cn.pq</groupId>
+	<artifactId>dubbo_demo_service</artifactId>
+	<version>${dubbo_demo_service.version}</version>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>cn.pq</groupId>
+		<artifactId>dubbo_demo_parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../dubbo_demo_parent</relativePath>
+	</parent>
+	
+	<dependencies>
+		<dependency>
+			<groupId>cn.pq</groupId>
+			<artifactId>dubbo_demo_facade</artifactId>
+			<version>${dubbo_demo_facade.version}</version>
+		</dependency>
+	</dependencies>
+
+	<name>dubbo_demo_service</name>
+	<url>http://maven.apache.org</url>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
